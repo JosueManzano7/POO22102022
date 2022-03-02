@@ -1,0 +1,191 @@
+
+sigma@DESKTOP-3592M0D MINGW64 ~
+$ pwd
+/c/Users/sigma
+
+sigma@DESKTOP-3592M0D MINGW64 ~
+$ git clone https://github.com/JosueManzano7/POO22102022.git
+Cloning into 'POO22102022'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+sigma@DESKTOP-3592M0D MINGW64 ~
+$ cd POO22102022
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ ls
+README.md
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ nano README.md
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ cat README.md
+# POO22102022
+Repositorio para el curso de POO grupo 2210
+
+## esto es una cabecera H2
+###### esta esta H6
+
+## Una lista
+1. elemento 1
+1. elemento 2
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ mkdir sesiones
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ cd sesiones/
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones (main)
+$ nano README.md
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones (main)
+$ ls
+README.md
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones (main)
+$ mkdir tareas
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones (main)
+$ cd tareas
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones/tareas (main)
+$ cd ..
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones (main)
+$ mkdir tareas
+mkdir: cannot create directory ‘tareas’: File exists
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones (main)
+$ cd ..
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ mkdir tareas
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ cd tareas
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/tareas (main)
+$ nano README.md
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/tareas (main)
+$ cat readme.md
+# carpeta para la entrega de tareas
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/tareas (main)
+$ cd ..
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ cd sesiones
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones (main)
+$ rm -rf tareas
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones (main)
+$ ls
+README.md
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022/sesiones (main)
+$ cd ..
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ ls
+README.md  sesiones/  tareas/
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git pull
+Already up to date.
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git add .
+warning: LF will be replaced by CRLF in sesiones/README.md.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tareas/README.md.
+The file will have its original line endings in your working directory
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   sesiones/README.md
+        new file:   tareas/README.md
+
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git commit -m "Se crea la estructura basica"
+[main 19d0f08] Se crea la estructura basica
+ 3 files changed, 9 insertions(+)
+ create mode 100644 sesiones/README.md
+ create mode 100644 tareas/README.md
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git push origin main
+fatal: credential-cache unavailable; no unix socket support
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 628 bytes | 628.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JosueManzano7/POO22102022.git
+   83f164b..19d0f08  main -> main
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        sesiones/ConceptosBasicos/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git pull
+Already up to date.
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git add .
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git commit -m "Se agrega proyecto de conceptos basicos"
+[main 9470234] Se agrega proyecto de conceptos basicos
+ 8 files changed, 1988 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 sesiones/ConceptosBasicos/build.xml
+ create mode 100644 sesiones/ConceptosBasicos/manifest.mf
+ create mode 100644 sesiones/ConceptosBasicos/nbproject/build-impl.xml
+ create mode 100644 sesiones/ConceptosBasicos/nbproject/genfiles.properties
+ create mode 100644 sesiones/ConceptosBasicos/nbproject/project.properties
+ create mode 100644 sesiones/ConceptosBasicos/nbproject/project.xml
+ create mode 100644 sesiones/ConceptosBasicos/src/conceptosbasicos/ConceptosBasicos.java
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ git push origin main
+fatal: credential-cache unavailable; no unix socket support
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (15/15), 15.89 KiB | 3.18 MiB/s, done.
+Total 15 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JosueManzano7/POO22102022.git
+   19d0f08..9470234  main -> main
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ ls
+README.md  sesiones/  tareas/
+
+sigma@DESKTOP-3592M0D MINGW64 ~/POO22102022 (main)
+$ pwd
+/c/Users/sigma/POO22102022
