@@ -15,7 +15,7 @@ public class PruebaEjemplo {
         cliente[4]=new Cuentahabiente(10005,"Alberto Dominguez Alavez", 88000.50f);
         
         cliente[0].retirarDinero(500);
-        cliente[4].retirarDinero(8000.5f);
+        cliente[4].retirarDinero(8000.50f);
         
         for(Cuentahabiente i:cliente){
             System.out.println(i.getNombre()+" es "+i.evaluarCliente()+" "+i);

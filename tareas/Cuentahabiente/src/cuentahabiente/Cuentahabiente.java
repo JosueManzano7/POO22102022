@@ -46,7 +46,12 @@ public class Cuentahabiente {
     }
     
     public void retirarDinero(float monto){
-    balance=balance-monto;
+         if(monto<=this.balance){
+                this.balance-=monto;
+           }
+         else{
+                System.out.println("DiINERO INSUFICIENTE");
+           }
     }
     
     public String evaluarCliente(){
