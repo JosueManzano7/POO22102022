@@ -14,7 +14,7 @@ import ico.fes.componentes.Teclado;
  * @author lenovo
  */
 public class Computadora {
-    private String marca;
+    private String marca;      // tipo dado o clase/variable //
     private String modelo;
     private Monitor pantalla;
     private Mouse raton;
@@ -23,7 +23,7 @@ public class Computadora {
 
     public Computadora() {
     }
-
+                                           //Poner nombres de clases en vez de tipo de dato
     public Computadora(String marca, String modelo, Monitor pantalla, Mouse raton, Procesador cpu, Teclado teclado) {
         this.marca = marca;
         this.modelo = modelo;
